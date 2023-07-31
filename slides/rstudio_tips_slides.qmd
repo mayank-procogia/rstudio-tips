@@ -1,0 +1,285 @@
+---
+title: "<span style='color:white; text-shadow: 4px 4px 3px #91bd02;'>Supercharge Your Flow</span>"
+subtitle: "<span style='color:white; text-shadow: 2px 2px 3px #91bd02;'>Tips and Tricks for improving RStudio IDE Development Efficiency</span>"
+author: "<span style='color:#242a3e; text-shadow: 2px 2px 3px #23b7cb;'>Mayank Agrawal<br/><span style='font-size: 22px;'>Senior R developer Consultant I<br/>ProCogia</span></span>"
+title-slide-attributes: 
+  data-background-image: "data/LinkedIn_Banner_01.png"
+  data-background-opacity: "0.75"
+date: today
+date-format: full
+format: 
+  revealjs:
+    logo: data/procogia_logo_minimal.png
+    footer: "R Tutorials Series - Afternoon Session - 31 July 2023"
+    smaller: true
+    slide-number: true
+    transition: slide
+    transition-speed: fast
+editor: visual
+self-contained: true
+---
+
+## Hello, There
+
+This presentation will show you examples of what you can do with RStudio IDE, including:
+
+::: incremental
+-   RStudio Projects
+-   Personalizing your IDE
+-   Navigating Views
+-   Keyboard Shortcuts for different development flows
+    -   Searching variables in a broader context
+    -   Code Beautification Options
+    -   Code Folding and Run Options
+    -   Code Comments Outline Setup
+    -   History of previous commands used
+    -   ...and much more
+:::
+
+![](data/hello-astronaut-512.png){.absolute bottom=0 right=0 height="200"}
+
+## RStudio Projects
+
+RStudio projects make it straightforward to divide your work into multiple contexts, each with their own working directory, workspace, history, and source documents.
+
+::: fragment
+### Why should I use it?
+
+-   Isolates your development environment.
+
+-   Relative path referencing for your project files.
+
+-   Helps setup project package management via `renv` or `packrat`
+
+-   Segregate development flow and context.
+
+![](data/question.png){.absolute bottom="20rem" right=0 height="175"}
+:::
+
+::: fragment
+### How to create a new RStudio Project?
+
+Use your RStudio IDE Toolbar:
+
+-   `File` --\> `New Project` --\> (Choose) `New Directory`/`Existing Directory`/`Version Control`
+
+![](data/creativity.png){.absolute bottom=0 right=0 height="175"}
+:::
+
+# Personalize your RStudio IDE {background-image="data/personalize-settings.jpg"  background-size="250px" background-position="right 10% bottom 10%"}
+
+## Options
+
+The available options for the RStudio IDE are accessible from the **Options** dialog - `Tools` \> `Global Options` menu.
+
+::: columns
+::: {.column width="50%"}
+::: {.fragment fragment-index="2"}
+::: incremental
+-   [General R Options](https://support.posit.co/hc/en-us/articles/200549016-Customizing-the-RStudio-IDE#general) --- Default CRAN mirror, initial working directory, workspace and history behavior.
+-   [Source Code Editing](https://support.posit.co/hc/en-us/articles/200549016-Customizing-the-RStudio-IDE#editing) --- Enable/disable line numbers, selected word and line highlighting, soft-wrapping for R files, paren matching, right margin display, and console syntax highlighting; configure tab spacing; set default text encoding.
+-   [Appearance and Themes](https://support.posit.co/hc/en-us/articles/200549016-Customizing-the-RStudio-IDE#appearance) --- Specify font size and visual theme for the console and source editor.
+-   [Pane Layout](https://support.posit.co/hc/en-us/articles/200549016-Customizing-the-RStudio-IDE#pane-layout) --- Locations of console, source editor, and tab panes; set which tabs are included in each pane.
+-   [Packages](https://support.posit.co/hc/en-us/articles/200549016-Customizing-the-RStudio-IDE#packages) --- Set default CRAN repository and specify package development options.
+-   [Spelling](https://support.posit.co/hc/en-us/articles/200549016-Customizing-the-RStudio-IDE#spelling) --- Choose main dictionary language and specify spell checking options.
+-   [Git/SVN](https://support.posit.co/hc/en-us/articles/200549016-Customizing-the-RStudio-IDE#version-control) --- Configure locations of Git and Svn binaries and create and/or view SSH RSA keys.
+-   [Publishing](https://support.posit.co/hc/en-us/articles/200549016-Customizing-the-RStudio-IDE#publishing) --- Enable publishing apps and documents from IDE. Set account.
+:::
+:::
+:::
+
+::: {.column width="50%"}
+::: {.fragment fragment-index="2"}
+![](data/ss_RStudio_Options.png){fig-align="center"}
+:::
+:::
+:::
+
+# Navigating your RStudio IDE {background-image="data/navigate.jpg"  background-size="250px" background-position="right 10% bottom 10%"}
+
+
+## Navigate between Window Panes
+
+Knowing how to toggle between panes without touching your mouse to move your cursor will help save time and improve your workflow. Use the following shortcuts to switch between panes seamlessly (Mac/Windows):
+
+::: incremental
+-   `Control/Ctrl + 1`: Source editor (your script)
+
+-   `Control/Ctrl + 2`: Console
+
+-   `Control/Ctrl + 3`: Help
+
+-   `Control/Ctrl + 4`: History
+
+-   `Control/Ctrl + 5`: Files
+
+-   `Control/Ctrl + 6`: Plots
+
+-   `Control/Ctrl + 7`: Packages
+
+-   `Control/Ctrl + 8`: Environment
+
+-   `Control/Ctrl + 9`: Viewer
+:::
+
+## Single Pane View
+
+If you prefer to only have one pane in view at a time, add `Shift` to any of the previous commands to maximize the pane. Use the following shortcuts to bring a panes into primary focus seamlessly (Mac/Windows):
+
+-   `Control/Ctrl + Shift + 1`: Source editor (your script) pane only
+
+-   `Control/Ctrl + Shift + 2`: Console pane only
+
+-   `Control/Ctrl + Shift + 3`: Help pane only
+
+-   `Control/Ctrl + Shift + 4`: History pane only
+
+-   `Control/Ctrl + Shift + 5`: Files pane only
+
+-   `Control/Ctrl + Shift + 6`: Plots pane only
+
+-   `Control/Ctrl + Shift + 7`: Packages pane only
+
+-   `Control/Ctrl + Shift + 8`: Environment pane only
+
+-   `Control/Ctrl + Shift + 9`: Viewer pane only
+
+## The Classic Four Pane View
+
+Wait! How do I go back to the classic four-pane view?
+
+![](data/wait_meme.jpeg){fig-align="center" width="199"}
+
+`Control/Ctrl + Shift + 0` (Mac/Windows): Four-pane RStudio IDE View
+
+# Keyboard Shortcuts {background-image="data/keyboard-typing.jpg"  background-size="250px" background-position="right 10% bottom 10%"}
+
+RStudio provides dozens of useful shortcuts that you can access through the menu at the top:
+
+`Tools` \> `Keyboard Shortcuts Help`.
+
+## Console
+
+| **Description**                    | Windows & Linux    | Mac                   |
+|---------------------------------|--------------------|-------------------|
+| Shift focus of cursor to Console   | `Ctrl + 2`         | `Control + 2`         |
+| Clear Console                      | `Ctrl + L`         | `Control + L`         |
+| Move Cursor to beginning of a line | `Home`             | `Cmd + Left`          |
+| Move Cursor to end of a line       | `End`              | `Cmd + Right`         |
+| Move Cursor to start/end of a word | `Alt + Left/Rigth` | `Option + Left/Right` |
+| Navigate command history           | `Up/Down`          | `Up/Down`             |
+| Pop-up Command history             | `Ctrl + Up`        | `Cmd + Up`            |
+
+## Source Scripts
+
+| **Description**                   | Windows & Linux    | Mac                |
+|---------------------------------|--------------------|-------------------|
+| Toggle document outline           | `Ctrl + Shift + O` | `Cmd + Shift + O`  |
+| Clear Console                     | `Ctrl + L`         | `Control + L`      |
+| New R Script                      | `Ctrl + Shift + N` | `Cmd + Shift + N`  |
+| Save active document              | `Ctrl + S`         | `Cmd + S`          |
+| Save **all** documents            | `Ctrl + Alt + S`   | `Cmd + Option + S` |
+| Close active document             | `Ctrl + W`         | `Cmd + W`          |
+| Close **all** open documents      | `Ctrl + Shift + W` | `Cmd + Shift + W`  |
+| Knit and Preview Document (knitr) | `Ctrl + Shift + K` | `Cmd + Shift + K`  |
+| Insert Chunk                      | `Ctrl + Alt + I`   | `Cmd + Option + I` |
+
+## Find
+
+| **Description**  | Windows & Linux    | Mac               |
+|------------------|--------------------|-------------------|
+| Find and Replace | `Ctrl + F`         | `Cmd + F`         |
+| Find in Files    | `Ctrl + Shift + F` | `Cmd + Shift + F` |
+
+## Insert
+
+| **Description**                   | Windows & Linux          | Mac                         |
+|------------------------|-----------------------|-------------------------|
+| Insert Assignment Operator (`<-`) | `Alt + - (hyphen/minus)` | `Option + - (hyphen/minus)` |
+| Insert Pipe Operator (`%>%`)      | `Ctrl + Shift + M`       | `Cmd + Shift + M`           |
+
+## Code
+
+| **Description**                           | Windows & Linux            | Mac                           |
+|-------------------------------|-------------------|----------------------|
+| Re-indent lines                           | `Ctrl + I`                 | `Cmd + I`                     |
+| Comment/un-comment current line/selection | `Ctrl + Shift + C`         | `Cmd + Shift + C`             |
+| Reformat Selection                        | `Ctrl + Shift + A`         | `Cmd + Shift + A`             |
+| Move Lines Up/Down                        | `Alt + Up/Down`            | `Option + Up/Down`            |
+| Copy Lines Up/Down                        | `Shift + Alt + Up/Down`    | `Cmd + Option + Up/Down`      |
+| Jump to Matching Brace/Parenthesis        | `Ctrl + P`                 | `Control + P`                 |
+| Add Cursor Above/Below Current Cursor     | `Ctrl + Alt + Up/Down`     | `Control + Option + Up/Down`  |
+| (Alternate) Add Cursor via drag           | `Alt + drag mouse pointer` | `Option + drag mouse pointer` |
+| Delete Current Line                       | `Ctrl + D`                 | `Cmd + D`                     |
+| Insert Roxygen Skeleton                   | `Ctrl + Alt + Shift + R`   | `Cmd + Option + Shift + R`    |
+| Attempt Code Completion                   | `Tab` or `Ctrl + Space`    | `Tab` or `Cmd + Space`        |
+
+## Code Sections
+
+| **Description**                             | Windows & Linux      | Mac                        |
+|---------------------------------|--------------------|-------------------|
+| Run current line/selection                  | `Ctrl + Enter`       | `Cmd + Return`             |
+| Run current document                        | `Ctrl + Alt + R`     | `Cmd + Option + R`         |
+| Send current line/selection to **terminal** | `Ctrl + Alt + Enter` | `Cmd + Option + Return`    |
+| Fold Selected                               | `Alt + L`            | ``` Cmd +``Option + L ```  |
+| Unfold Selected                             | `Shift + Alt + L`    | `Cmd + Shift + Option + L` |
+| Fold **All**                                | `Alt + O`            | `Cmd + Option + O`         |
+| Unfold **All**                              | `Shift + Alt + O`    | `Cmd + Shift + Option + O` |
+
+## Tabs
+
+| **Description**                           | Windows & Linux            | Mac                             |
+|--------------------------|-----------------------|------------------------|
+| Switch to tab                             | `Ctrl + Shift +. [period]` | `Control + Shift + . [period]`  |
+| Next tab (desktop)                        | `Ctrl + Tab`               | `Control + Tab`                 |
+| Previous tab (desktop)                    | `Ctrl + Shift + Tab`       | `Control + Shift + Tab`         |
+| (Alternate) Shift between tabs left/right | `Ctrl + Alt + left/right`  | `Control + Option + left/right` |
+| Next tab (Workbench)                      | `Ctrl + F12`               | `Control + F12`                 |
+| Previous tab (Workbench)                  | `Ctrl + F11`               | `Control + F11`                 |
+
+## Terminal
+
+| **Description**        | Windows & Linux   | Mac                  |
+|------------------------|-------------------|----------------------|
+| Move Focus to Terminal | `Alt + Shift + M` | `Shift + Option + M` |
+| New Terminal           | `Alt + Shift + R` | `Shift + Option + R` |
+
+## Session
+
+| **Description**   | Windows & Linux    | Mac               |
+|-------------------|--------------------|-------------------|
+| Restart R session | `Ctrl + Shift + 0` | `Cmd + Shift + 0` |
+
+# References {background-image="data/thinking.jpg"  background-size="250px" background-position="right 10% bottom 10%"}
+
+## References - RStudio IDE {.scrollable .smaller}
+
+-   RStudio Shortcuts Cheat sheet:
+
+    -   RStudio IDE Toolbar: `Help` --\> `Keyboard Shortcuts Help`
+
+    -   Mac: `Option` + `Shift` + `K`
+
+    -   Windows: `Alt` + `Shift` + `K`
+
+-   Customizing the RStudio IDE: [Link 1](https://support.posit.co/hc/en-us/articles/200549016-Customizing-the-RStudio-IDE) [Link 2](https://support.posit.co/hc/en-us/articles/200711853-Keyboard-Shortcuts-in-the-RStudio-IDE)
+
+-   23 RStudio Tips, Tricks, and Shortcuts by DataQuest [Link](https://www.dataquest.io/blog/rstudio-tips-tricks-shortcuts/)
+
+-   Comprehensive documentation and self help guides for using RStudio IDE [Link](https://support.posit.co/hc/en-us/sections/200107586-Using-the-RStudio-IDE)
+
+-   Using RStudio Projects. [Link](https://support.posit.co/hc/en-us/articles/200526207-Using-RStudio-Projects)
+
+## References - Shiny and Quarto {.smaller}
+
+-   A collection of R Shiny examples by Posit [GitHub](https://github.com/rstudio/shiny-examples)
+
+-   Hello Quarto Tutorial [Link](https://quarto.org/docs/get-started/hello/rstudio.html)
+
+-   Reveal JS Slides: [Basics](https://quarto.org/docs/presentations/revealjs/) [Advanced](https://quarto.org/docs/presentations/revealjs/advanced.html) [Presenting Slides](https://quarto.org/docs/presentations/revealjs/presenting.html) [Themes](https://quarto.org/docs/presentations/revealjs/themes.html) [All Options](https://quarto.org/docs/reference/formats/presentations/revealjs.html)
+
+-   Making Slides with Quarto by Tom Mock (2022-07-25) [Link](https://rstudio-conf-2022.github.io/get-started-quarto/materials/05-presentations.html#/presentations)
+
+-   Slidecraft 101: Colors and Fonts - All about colors and fonts in slide crafting [Link](https://www.emilhvitfeldt.com/post/slidecraft-colors-fonts/)
+
+-   Posit Cheat Sheets [Link](https://posit.co/resources/cheatsheets/)

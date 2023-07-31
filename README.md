@@ -1,2 +1,1 @@
-# rstudio-tips
-Tips and Tricks to use RStudio IDE
+Repository to create, store and share slides for R Tutorials within Acuna ProCogia by Mayank Agrawal
