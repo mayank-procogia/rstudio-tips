@@ -1,4 +1,4 @@
-See a comprehensive list of R Shiny examples at <<a href="https://github.com/rstudio/shiny-examples/" target="_blank">>
+See a comprehensive list of R Shiny examples at <a href="https://github.com/rstudio/shiny-examples/" target="_blank">https://github.com/rstudio/shiny-examples/</a>
 
 You can see them in action on `http://gallery.shinyapps.io/example-name` where `example-name` is the directory
 name of an example here, e.g. http://gallery.shinyapps.io/001-hello
