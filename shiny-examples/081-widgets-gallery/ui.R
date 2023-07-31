@@ -1,19 +1,24 @@
-fluidPage(
+ui <- fluidPage(
   
+  # CSS - update background color for text output ----
   tags$head(tags$style(HTML("
     .shiny-text-output {
       background-color:#fff;
     }
   "))),
   
+  # App header ----
   h1("Shiny", span("Widgets Gallery", style = "font-weight: 300"), 
+      ## CSS - Header Custom Style ----
       style = "font-family: 'Source Sans Pro';
         color: #fff; text-align: center;
         background-image: url('texturebg.png');
         padding: 20px"),
   br(),
   
+  # App description ----
   fluidRow(
+    ## center the desc ----
     column(6, offset = 3,
       p("For each widget below, the Current Value(s) window 
         displays the value that the widget provides to shinyServer. 
@@ -25,8 +30,11 @@ fluidPage(
   
   br(),
   
+  # Widgets layout ----
+  
+  ## row 1 ----
   fluidRow(
-    
+    ### Action button ----
     column(4,
       wellPanel(
         h3("Action button"),
@@ -38,6 +46,7 @@ fluidPage(
           href = "https://gallery.shinyapps.io/068-widget-action-button/")
       )),
     
+    ### Single checkbox ----
     column(4,
       wellPanel(
         h3("Single checkbox"),
@@ -50,6 +59,7 @@ fluidPage(
           href = "https://gallery.shinyapps.io/070-widget-checkbox/")
       )),
     
+    ### Checkbox group ----
     column(4,
       wellPanel(
         checkboxGroupInput("checkGroup", 
@@ -65,8 +75,9 @@ fluidPage(
       ))
   ),
   
+  ## row 2 ----
   fluidRow(
-        
+    ### Date Input ----
     column(4,
       wellPanel(
         dateInput("date", label = h3("Date input"), value = "2014-01-01"),  
@@ -77,6 +88,7 @@ fluidPage(
           href = "https://gallery.shinyapps.io/071-widget-date/")
       )),
     
+    ### Date Range ----
     column(4,
       wellPanel(
         dateRangeInput("dates", label = h3("Date range")),
@@ -87,6 +99,7 @@ fluidPage(
           href = "https://gallery.shinyapps.io/072-widget-date-range/")
       )),
     
+    ### File Input ----
     column(4,
       wellPanel(
         fileInput("file", label = h3("File input")),
@@ -98,8 +111,10 @@ fluidPage(
       ))
   ),
   
+  ## row 3 ----
   fluidRow(
         
+    ### Numeric input ----
     column(4,
       wellPanel(
         numericInput("num", label = h3("Numeric input"), value = 1),
@@ -110,6 +125,7 @@ fluidPage(
           href = "https://gallery.shinyapps.io/074-widget-numeric/")
       )),
     
+    ### Radio Button ----
     column(4,
       wellPanel(
         radioButtons("radio", label = h3("Radio buttons"),
@@ -122,6 +138,7 @@ fluidPage(
           href = "https://gallery.shinyapps.io/075-widget-radio/")
       )),
     
+    ### Select Box ----
     column(4,
       wellPanel(
         selectInput("select", label = h3("Select box"), 
@@ -135,8 +152,10 @@ fluidPage(
       ))
   ),
   
+  ## row 4 ----
   fluidRow(
     
+    ### Slider ----
     column(4,
       wellPanel(
         sliderInput("slider1", label = h3("Slider"), min = 0, max = 100, 
@@ -148,6 +167,7 @@ fluidPage(
           href = "https://gallery.shinyapps.io/077-widget-slider/")
       )),
     
+    ### Slider Range ----
     column(4,
       wellPanel(
         sliderInput("slider2", label = h3("Slider range"), min = 0, 
@@ -159,6 +179,7 @@ fluidPage(
           href = "https://gallery.shinyapps.io/077-widget-slider/")
       )),
     
+    ### Text Input ----
     column(4,
       wellPanel(
         textInput("text", label = h3("Text input"), 
@@ -171,4 +192,4 @@ fluidPage(
     )) 
   )
 
-)
+) # end of ui fluidRow

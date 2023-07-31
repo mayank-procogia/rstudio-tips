@@ -1,4 +1,4 @@
-function(input, output) {
+server <- function(input, output) {
 
   output$actionOut <- renderPrint({ input$action })
   output$checkboxOut <- renderPrint({ input$checkbox })
