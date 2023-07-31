@@ -1,7 +1,10 @@
 ---
-title: "Supercharge Your Flow"
-subtitle: "Tips and Tricks for improving RStudio IDE Development Efficiency"
-author: "Mayank Agrawal<br/><span style='font-size: 22px;'>Senior R developer Consultant I<br/>ProCogia</span>"
+title: "<span style='color:white; text-shadow: 4px 4px 3px #91bd02;'>Supercharge Your Flow</span>"
+subtitle: "<span style='color:white; text-shadow: 4px 4px 3px #91bd02;'>Tips and Tricks for improving RStudio IDE Development Efficiency</span>"
+author: "<span style='color:#242a3e; text-shadow: 2px 2px 3px #23b7cb;'>Mayank Agrawal<br/><span style='font-size: 22px;'>Senior R developer Consultant I<br/>ProCogia</span></span>"
+title-slide-attributes: 
+  data-background-image: "data/LinkedIn_Banner_01.png"
+  data-background-opacity: "0.75"
 date: today
 date-format: full
 format: 
@@ -11,6 +14,7 @@ format:
     smaller: true
     slide-number: true
     transition: slide
+    transition-speed: fast
 editor: visual
 self-contained: true
 ---
@@ -182,10 +186,10 @@ RStudio provides dozens of useful shortcuts that you can access through the menu
 
 ## Insert
 
-| **Description**            | Windows & Linux          | Mac                         |
+| **Description**                   | Windows & Linux          | Mac                         |
 |------------------------|-----------------------|-------------------------|
-| Insert Assignment Operator | `Alt + - (hyphen/minus)` | `Option + - (hyphen/minus)` |
-| Insert Pipe Operator       | `Ctrl + Shift + M`       | `Cmd + Shift + M`           |
+| Insert Assignment Operator (`<-`) | `Alt + - (hyphen/minus)` | `Option + - (hyphen/minus)` |
+| Insert Pipe Operator (`%>%`)      | `Ctrl + Shift + M`       | `Cmd + Shift + M`           |
 
 ## Code
 
