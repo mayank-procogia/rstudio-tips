@@ -36,7 +36,7 @@ This presentation will show you examples of what you can do with RStudio IDE, in
     -   ...and much more
 :::
 
-![](data/hello-astronaut-512.png){.absolute bottom=0 right=0 height="200"}
+![](data/hello-astronaut-512.png){.absolute bottom="0" right="0" height="200"}
 
 ## RStudio Projects
 
@@ -53,7 +53,7 @@ RStudio projects make it straightforward to divide your work into multiple conte
 
 -   Segregate development flow and context.
 
-![](data/question.png){.absolute bottom="20rem" right=0 height="175"}
+![](data/question.png){.absolute bottom="20rem" right="0" height="175"}
 :::
 
 ::: fragment
@@ -63,10 +63,10 @@ Use your RStudio IDE Toolbar:
 
 -   `File` --\> `New Project` --\> (Choose) `New Directory`/`Existing Directory`/`Version Control`
 
-![](data/creativity.png){.absolute bottom=0 right=0 height="175"}
+![](data/creativity.png){.absolute bottom="0" right="0" height="175"}
 :::
 
-# Personalize your RStudio IDE {background-image="data/personalize-settings.jpg"  background-size="250px" background-position="right 10% bottom 10%"}
+# Personalize your RStudio IDE {background-image="data/personalize-settings.jpg" background-size="250px" background-position="right 10% bottom 10%"}
 
 ## Options
 
@@ -95,8 +95,7 @@ The available options for the RStudio IDE are accessible from the **Options** di
 :::
 :::
 
-# Navigating your RStudio IDE {background-image="data/navigate.jpg"  background-size="250px" background-position="right 10% bottom 10%"}
-
+# Navigating your RStudio IDE {background-image="data/navigate.jpg" background-size="250px" background-position="right 10% bottom 10%"}
 
 ## Navigate between Window Panes
 
@@ -152,7 +151,7 @@ Wait! How do I go back to the classic four-pane view?
 
 `Control/Ctrl + Shift + 0` (Mac/Windows): Four-pane RStudio IDE View
 
-# Keyboard Shortcuts {background-image="data/keyboard-typing.jpg"  background-size="250px" background-position="right 10% bottom 10%"}
+# Keyboard Shortcuts {background-image="data/keyboard-typing.jpg" background-size="250px" background-position="right 10% bottom 10%"}
 
 RStudio provides dozens of useful shortcuts that you can access through the menu at the top:
 
@@ -221,7 +220,7 @@ RStudio provides dozens of useful shortcuts that you can access through the menu
 | Run current line/selection                  | `Ctrl + Enter`       | `Cmd + Return`             |
 | Run current document                        | `Ctrl + Alt + R`     | `Cmd + Option + R`         |
 | Send current line/selection to **terminal** | `Ctrl + Alt + Enter` | `Cmd + Option + Return`    |
-| Fold Selected                               | `Alt + L`            | ``` Cmd +``Option + L ```  |
+| Fold Selected                               | `Alt + L`            | `Cmd + Option + L`         |
 | Unfold Selected                             | `Shift + Alt + L`    | `Cmd + Shift + Option + L` |
 | Fold **All**                                | `Alt + O`            | `Cmd + Option + O`         |
 | Unfold **All**                              | `Shift + Alt + O`    | `Cmd + Shift + Option + O` |
@@ -250,7 +249,7 @@ RStudio provides dozens of useful shortcuts that you can access through the menu
 |-------------------|--------------------|-------------------|
 | Restart R session | `Ctrl + Shift + 0` | `Cmd + Shift + 0` |
 
-# References {background-image="data/thinking.jpg"  background-size="250px" background-position="right 10% bottom 10%"}
+# References {background-image="data/thinking.jpg" background-size="250px" background-position="right 10% bottom 10%"}
 
 ## References - RStudio IDE {.scrollable .smaller}
 
