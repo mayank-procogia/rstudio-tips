@@ -1,0 +1,24 @@
+Short Guide to update themes for revealjs slides
+https://www.emilhvitfeldt.com/post/slidecraft-colors-fonts/
+
+custom.scss file used for above config
+https://www.emilhvitfeldt.com/post/slidecraft-colors-fonts/custom.scss
+
+------------------------------------------------------------------------------------------------
+
+Official Quarto documentation for customizing slides
+https://quarto.org/docs/presentations/revealjs/themes.html
+
+GitHub for in-built themes for revealJs slides
+https://github.com/quarto-dev/quarto-cli/tree/main/src/resources/formats/revealjs/themes
+
+------------------------------------------------------------------------------------------------
+
+Google Font
+https://fonts.google.com/specimen/Raleway?query=raleway
+
+Color Contrast Checker
+https://coolors.co/contrast-checker/ffffa8-2d4349
+https://colourcontrast.cc/2d4349/ffffff
+
+
