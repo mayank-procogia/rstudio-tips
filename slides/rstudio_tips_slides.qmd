@@ -15,6 +15,8 @@ format:
     slide-number: true
     transition: slide
     transition-speed: fast
+    theme: [default, custom.scss]
+
 editor: visual
 self-contained: true
 ---
