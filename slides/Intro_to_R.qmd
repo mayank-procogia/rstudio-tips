@@ -102,9 +102,13 @@ This presentation will touch base on the following sections:
 
 ## R Popularity Ranking (Dec 2022)
 
+<center>
+
 ::: {style="width:30rem;"}
 ![](data/programming_language.png)
 :::
+
+</center>
 
 ## R Vs Python
 
