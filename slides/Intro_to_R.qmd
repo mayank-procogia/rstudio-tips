@@ -1,0 +1,135 @@
+---
+title: "<span style='color:white; text-shadow: 4px 4px 3px #91bd02;'>Introduction to R</span>"
+subtitle: "<span style='color:white; text-shadow: 2px 2px 3px #91bd02;'>The History</span>"
+author: "<span style='color:#242a3e; text-shadow: 2px 2px 3px #23b7cb;'>Mayank Agrawal<br/><span style='font-size: 22px;'>Senior R developer Consultant I<br/>ProCogia</span></span>"
+title-slide-attributes: 
+  data-background-image: "data/LinkedIn_Banner_01.png"
+  data-background-opacity: "0.75"
+date: today
+date-format: full
+format: 
+  revealjs:
+    logo: data/procogia_logo_minimal.png
+    footer: "Intro to R - The History"
+    smaller: true
+    slide-number: true
+    transition: slide
+    transition-speed: fast
+    theme: [default, custom.scss]
+editor: visual
+self-contained: true
+---
+
+## R is Quirky
+
+::: {style="font-size: 6vh; margin-top: 10vh;"}
+<blockquote>*"The best thing about R is that it was written by statisticians. The worst thing about R is that it was written by statisticians."* - Bow Cowgill, Google</blockquote>
+:::
+
+## Hello, There
+
+This presentation will touch base on the following sections:
+
+::: incremental
+-   Introduction
+-   Interesting Facts about R
+-   Why use R?
+-   RStudio IDE
+-   R vs Python
+-   The R Ecosystem
+-   R Popularity Ranking
+:::
+
+![](data/hello-astronaut-512.png){.absolute bottom="0" right="0" height="200"}
+
+## Introduction
+
+::: incremental
+-   R is primarily a statistical language developed in 1993-1995 by Robert Gentleman and Ross Ihaka at the University of Auckland, Auckland, New Zealand.
+-   Over the years, R has matured to be one of the preferred languages in the coding arsenal of Statisticians, Data Scientists, Data Engineers, Data Analysts and Data Miners.
+-   Application Domains: **Healthcare**, Academics, Consulting, Finance, Insurance, Media, and many more.
+-   Most famous applicability trend: Machine Learning, Data/Business Analytics, Data Visualization, Dashboard Development, and Analytics Application Development.
+-   R is available across platforms - Windows, Linux, MacOS.
+:::
+
+## Interesting Facts about R
+
+::: incremental
+-   R is open-source programming language with its roots from `S` programming language.
+-   R was conceived in 1993, initial version was released in 1995 and a stable R version was released in 2000.
+-   It was named after the first names of its first two authors.
+-   A hidden gem, R supports both procedural programming and object-oriented programming.
+-   The number of R packages available either through CRAN or GitHub is 1, 00, 000 and they do epic stuff with just one line of code. It could range from Regression to Bayesian analysis.
+-   Started gaining popularity for its support for reproducible workflow from researchers at academia.
+:::
+
+## Why use R?
+
+::: incremental
+-   **878 R User groups, 90 countries, 414 cities, 775,379 members.**
+-   Open-Source programming language.
+-   Rich eco-system to help end-to-end analytics flow from data sourcing, data loading, data manipulation, data engineering, analytics, dashboard development, report renders, automated emails to schedulers.
+-   Ability to integrate with other programming languages - Python, Java, .Net, C, C++ and much more.
+-   Has one of the strongest vast active community of R users, growing day-by-day.
+-   Multiple micro communities to share learnings - R Ladies, R Consortium, R Stats, R Weekly, R Users, Data Science Hangout,
+-   Backed by POSIT ongoing innovation and focus on ease of use and expanding capabilities.
+-   Check out [R User Community Dashboard](https://benubah.github.io/r-community-explorer/rugs.html){target="_blank"}
+:::
+
+## RStudio IDE 
+
+![](data/img_rstudio_ide.png){style="width:50%;"}
+
+## RStudio IDE Continued
+
+-   RStudio is the preferred IDE (Integrated Development Environment) for R programming.
+-   RStudio is free and open source.
+-   USP: version control and project management.
+-   RStudio has four main panes each in a quadrant of your screen:
+    -   Source Editor
+    -   Console
+    -   Work space Browser (and History), and
+    -   Plots (and Files, Packages, Help).
+
+## R Products Integrations
+
+![](data/logo_Tableau.png){style="width:13rem; background:white; padding:7px;"} ![](data/logo_powerbi.png){style="width:20rem;"} ![](data/logo_microstrategy.png){style="width:22rem;background:white; padding:15px;"} ![](data/logo_databricks.png){style="width:13rem; background:white; padding:7px;"} ![](data/logo_teradata.png){style="width:13rem; background:white; padding:7px;"} ![](data/logo_snowflake.png){style="width:13rem; background:white; padding:7px;"} ![](data/logo_ms_sql_server.png){style="width:13rem; background:white; padding:7px;"} ![](data/logo_oracle.png){style="width:20rem;"} ![](data/logo_ms_azure.png){style="width:13rem; background:white; padding:7px;"} ![](data/logo_visual_studio.png){style="width:13rem; background:white; padding:7px;"}
+
+
+## R Ecosystem
+
+![](data/r_ecosystem.png)
+
+## R Popularity Ranking (Dec 2022)
+
+<center>
+
+::: {style="width:30rem;"}
+![](data/programming_language.png)
+:::
+
+</center>
+
+## R Vs Python
+
+| Feature          | R                                                        | Python                                              |
+|------------------|--------------------------|----------------------------|
+| Scope            | Statistical language                                     | General purpose language                            |
+| First Release    | 1993                                                     | 1991                                                |
+| USP              | Statistical analysis, data exploration and visualization | ML, Deep Learning, Big Data                         |
+| IDE              | R Studio, VSCode                                         | Jupyter notebooks, Spyder, VSCode, PyCharm          |
+| Common Libraries | tidyverse, caret, shiny, rmarkdown, ggplot2, plotly      | Pandas, Numpy, Matplotlib, TensorFlow, scikit-learn |
+| Eco System       | \~20,000+ packages on CRAN                               | \~300,000+ packages on PyPi                         |
+| Trend (Dec 2022) | 11 in TIOBE and 7th in PYPL                              | 1 in TIOBE and 1 in PYPL                            |
+
+# References
+
+-   The R Ecosystem Slides [Link](https://www.slideshare.net/RevolutionAnalytics/the-r-ecosystem){target="_blank"}
+-   R: Then Vs Now Slides [Link](https://www.slideshare.net/RevolutionAnalytics/r-then-and-now){target="_blank"}
+-   R popularity index [Link](https://www.orientsoftware.com/blog/most-popular-programming-languages/){target="_blank"}
+-   R Programming Introduction [Link](https://intellipaat.com/blog/tutorial/r-programming/introduction/){target="_blank"}
+-   R Community Shiny Dashboard [Link](https://r-community.org/usergroups/){target="_blank"}
+-   R User Community Shiny Dashboard [Link](https://benubah.github.io/r-community-explorer/rugs.html){target="_blank"}
+-   R Ladies Shiny Dashboard [Link](https://ivelasq.github.io/rladies-video-feed/){target="_blank"}
+
+![](data/thinking.jpg){style="width: 350px; position: absolute; bottom: 2px;right: 0;"}

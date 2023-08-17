@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "locale": "en_US",
+  "platform": "4.2.0",
+  "metadata": {
+    "appmode": "quarto-static",
+    "primary_rmd": "Intro_to_R.qmd",
+    "primary_html": null,
+    "content_category": null,
+    "has_parameters": false
+  },
+  "quarto": {
+    "version": "1.3.450",
+    "engines": ["markdown"]
+  },
+  "packages": null,
+  "files": {
+    "custom.scss": {
+      "checksum": "20190a95b8f51b4704a6a62e040f449b"
+    },
+    "Intro_to_R.html": {
+      "checksum": "d381937697581767f81ac7c58d289ca7"
+    },
+    "Intro_to_R.qmd": {
+      "checksum": "a6d9a9059b36676215d9db1a011322f3"
+    }
+  },
+  "users": null
+}
